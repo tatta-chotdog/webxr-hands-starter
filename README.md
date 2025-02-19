@@ -1,4 +1,4 @@
-# WebXR Cube Starter
+# WebXR Hands Starter
 
 ## How to run it on your HMD?
 
