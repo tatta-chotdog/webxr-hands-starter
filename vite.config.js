@@ -4,9 +4,8 @@ import basicSsl from "@vitejs/plugin-basic-ssl";
 export default defineConfig({
   server: {
     host: true,
-    port: 8081,
     https: true,
-    open: true,
+    port: 8081,
   },
   build: {
     outDir: "dist",
