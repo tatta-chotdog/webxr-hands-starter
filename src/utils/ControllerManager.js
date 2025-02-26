@@ -14,32 +14,32 @@ export class ControllerManager {
   }
 
   _setupControllers() {
-    this.controller1 = this.renderer.xr.getController(0);
-    this.controller2 = this.renderer.xr.getController(1);
-    this.scene.add(this.controller1);
-    this.scene.add(this.controller2);
+    const rightController = this.renderer.xr.getController(0);
+    const leftController = this.renderer.xr.getController(1);
+    this.scene.add(rightController);
+    this.scene.add(leftController);
   }
 
   _setupControllerGripsAndHands() {
     const controllerModelFactory = new XRControllerModelFactory();
     const handModelFactory = new XRHandModelFactory();
 
-    this.controllerGrip1 = this.renderer.xr.getControllerGrip(0);
-    this.controllerGrip1.add(
-      controllerModelFactory.createControllerModel(this.controllerGrip1)
+    const rightControllerGrip = this.renderer.xr.getControllerGrip(0);
+    rightControllerGrip.add(
+      controllerModelFactory.createControllerModel(rightControllerGrip)
     );
-    this.hand1 = this.renderer.xr.getHand(0);
-    this.hand1.add(handModelFactory.createHandModel(this.hand1, "boxes"));
-    this.scene.add(this.controllerGrip1);
-    this.scene.add(this.hand1);
+    const rightHand = this.renderer.xr.getHand(0);
+    rightHand.add(handModelFactory.createHandModel(rightHand, "boxes"));
+    this.scene.add(rightControllerGrip);
+    this.scene.add(rightHand);
 
-    this.controllerGrip2 = this.renderer.xr.getControllerGrip(1);
-    this.controllerGrip2.add(
-      controllerModelFactory.createControllerModel(this.controllerGrip2)
+    const leftControllerGrip = this.renderer.xr.getControllerGrip(1);
+    leftControllerGrip.add(
+      controllerModelFactory.createControllerModel(leftControllerGrip)
     );
-    this.hand2 = this.renderer.xr.getHand(1);
-    this.hand2.add(handModelFactory.createHandModel(this.hand2, "boxes"));
-    this.scene.add(this.controllerGrip2);
-    this.scene.add(this.hand2);
+    const leftHand = this.renderer.xr.getHand(1);
+    leftHand.add(handModelFactory.createHandModel(leftHand, "boxes"));
+    this.scene.add(leftControllerGrip);
+    this.scene.add(leftHand);
   }
 }
