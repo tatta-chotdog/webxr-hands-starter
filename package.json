@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "@vitejs/plugin-basic-ssl": "^1.2.0",
-    "three": "^0.173.0"
+    "three": "^0.173.0",
+    "troika-three-text": "^0.52.3"
   },
   "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }
