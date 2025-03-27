@@ -1,4 +1,5 @@
 # WebXR Hands Starter
+![hands](https://github.com/user-attachments/assets/177ffc9b-13b2-4d5b-89da-2d2a395bff89)
 
 ## How to run it on your HMD?
 
