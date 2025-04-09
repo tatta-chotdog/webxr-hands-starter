@@ -19,3 +19,13 @@ yarn dev
 2.  Open the following link in a browser that supports WebXR on an HMD.(Replace "?" with the IP address)
 
 `https://???.???.?.?:8081/`
+
+## Learn more about WebXR
+
+https://immersiveweb.dev/
+
+https://immersive-web.github.io/webxr/explainer.html
+
+https://developers.meta.com/horizon/documentation/web/webxr-overview
+
+https://developers.meta.com/horizon/develop/web
