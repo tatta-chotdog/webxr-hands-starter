@@ -1,5 +1,5 @@
 # WebXR Hands Starter
-![hands](https://github.com/user-attachments/assets/177ffc9b-13b2-4d5b-89da-2d2a395bff89)
+![hand_cropped_texture_preserved](https://github.com/user-attachments/assets/0ca9d214-2ef2-4d33-9cb5-60316a217f69)
 
 ## How to run it on your HMD?
 
